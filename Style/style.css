@@ -165,7 +165,7 @@ nav a:focus,nav a:hover  {
 /* ========== home_hero ==========*/
 
 .home_hero  {
-    background-image: url(../Images/hero_image.jpg);
+    background-image: url(../images/hero_image.jpg);
     color: #F8FFE5;
     background-position: center;
     -webkit-background-size: 100%; 
