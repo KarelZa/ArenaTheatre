@@ -1,0 +1,16 @@
+All of the images are taken from the Unsplash ( that offers copyright license for free).
+All of the text is Visual studio code generated (lorem method)
+
+
+Header image:
+https://unsplash.com/photos/evlkOfkQ5rE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink by Felix Mooneeram 
+
+Article 1 image:
+https://unsplash.com/photos/FU1KddSIIR4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink by Alex Zamora
+
+Article 2 image:
+https://unsplash.com/photos/WA6J0-olH7M?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink by Clem Onojeghuo
+
+Article 3 image:
+https://unsplash.com/photos/slbOcNlWNHA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink by Larisa Birta 
+

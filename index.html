@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css" type="text/css">
+    <script src="Javascript/Javascript.js"></script>
+    <title>Komorni Scena Arena</title>
+</head>
+
+<body>
+  <header>  
+    <div class="logo_container">
+       <a href="index.html"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.58 37.54"><defs><style>.cls-1,.cls-4{font-size:12px;fill:#fff;font-family:Arial-Black, Arial;font-weight:800;}.cls-2{letter-spacing:-0.01em;}.cls-3{font-size:9px;font-family:ArialMT, Arial;font-weight:400;}.cls-3,.cls-4{letter-spacing:0.04em;}</style></defs><title>Logo</title><text class="cls-1" transform="translate(0 10.86)">ARÉ<tspan class="cls-2" x="27.33" y="0">N</tspan><tspan x="37.21" y="0">A</tspan><tspan class="cls-3"><tspan x="0" y="10">KOMORNÍ</tspan></tspan></text><text class="cls-4" transform="translate(0.38 33.72)">S</text><text class="cls-4" transform="translate(8.74 33.72)">C</text><text class="cls-1" transform="translate(18 33.86)">É<tspan class="cls-2" x="8.67" y="0">N</tspan><tspan x="18.54" y="0">A</tspan></text><text x="-556.02" y="-270.97"/></svg></a>
+    </div>
+
+    <input type="checkbox" id="nav_toggle" class="nav_toggle">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>  
+          <li><a href="pricing.html">Tickets</a></li>
+          <li><a href="feedback_form.html">Feedback</a></li>
+          <li><a onclick="scrollSmoothTo('contact')" class="pointer">Contact</a></li>
+        </ul>       
+      </nav>
+    <label for="nav_toggle" class="nav_toggle_label"><span>&#9776;</span></label>  
+  </header>
+
+  <section class="home_hero">
+    <div class="container_hero">
+      <h1 class="title">Not a typical Theatre 
+         <span>A theatre you will fall in love with</span>
+      </h1>
+      <a onclick="scrollSmoothTo('discover')" class="button button_hero pointer" >discover</a>
+    </div>
+  </section>
+
+ 
+  <main id="discover" >
+    <div class="main_grid" >
+      <article> 
+        <div class="article_image">
+            <a target="_blank" href="images/Unsplash_play1-1200.jpg">
+              <picture> 
+                <source media="(min-width: 480px)" srcset="images/Unsplash_play1-800.jpg 800w, images/Unsplash_1200.jpg 1200w" sizes="80vw">
+                <img src="images/Unsplash_play1-400.jpg" alt="Band on stage">
+              </picture>
+            </a>
+        </div>
+
+        <div class="article_content">
+            <h2 class="article_title"><a href="article1.html" >ARTICLE 1</a></h2>
+            <p class="article_time"><time datetime="2020-10-29">29.10.2020</time></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque blanditiis ipsa nulla eveniet! Alias possimus, enim itaque vitae et quae deserunt id veritatis laboriosam, qui assumenda reiciendis recusandae fugiat fuga eius!Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            </p> 
+        </div>
+            
+        <div class="article_buttons">
+            <a href="article1.html" class="button_1 button_article">READ MORE</a> 
+            <a class="button_1 button_article">SHARE ME</a>     <!-- NOT BROKEN , just no implementation  -->
+        </div>
+      </article>
+
+      <article>
+        <div class="article_image">
+            <a target="_blank" href="images/Unsplash_play2-1200.jpg">
+              <picture> 
+                <source media="(min-width: 480px)" srcset="images/Unsplash_play2-800.jpg 800w, images/Unsplash_play2-1200.jpg 1200w" sizes="80vw">
+                <img src="images/Unsplash_play2-400.jpg" alt="New play of A. christie in our threatre">
+              </picture>
+            </a>
+        </div>
+
+        <div class="article_content">
+            <h2 class="article_title"><a href="article2.html">ARTICLE 2</a></h2>
+            <p class="article_time"><time datetime="2020-10-29">29.10.2020</time></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque blanditiis ipsa nulla eveniet! Alias possimus, enim itaque vitae et quae deserunt id veritatis laboriosam, qui assumenda reiciendis recusandae fugiat fuga eius! Ipsam accusantium iste excepturi ut est suscipit.
+            </p> 
+        </div>
+
+        <div class="article_buttons">
+           <a href="article2.html" class="button_1 button_article">READ MORE</a> 
+           <a  class="button_1 button_article">SHARE ME</a>  <!-- NOT BROKEN , just no implementation  -->
+        </div>
+      </article>
+
+      <article>
+        <div class="article_image">
+            <a target="_blank" href="images/Unsplash_play3-1200.jpg">
+             <picture> 
+                <source media="(min-width: 480px)" srcset="images/Unsplash_play3-800.jpg 800w, images/Unsplash_play3-1200.jpg 1200w" sizes="80vw">
+                <img src="images/Unsplash_play3-400.jpg" alt="Symphonic orchestra at our theatre">
+              </picture>
+            </a>
+        </div>
+
+        <div class="article_content">
+            <h2 class="article_title"><a href="article3.html">ARTICLE 3</a></h2>
+            <p class="article_time"><time datetime="2020-10-29">29.10.2020</time></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque blanditiis ipsa nulla eveniet! Alias possimus, enim itaque vitae et quae deserunt id veritatis laboriosam, qui assumenda reiciendis recusandae fugiat fuga eius! Ipsam accusantium iste excepturi ut est suscipit.
+        </div>
+
+        <div class="article_buttons">
+           <a href="article3.html" class="button_1 button_article">READ MORE</a> 
+           <a class="button_1 button_article">SHARE ME</a>  <!-- NOT BROKEN , just no implementation  -->
+        </div>
+      </article>
+
+      <article>
+        <div class="article_image">
+            <a target="_blank" href="images/Unsplash_play1-1200.jpg">
+              <picture> 
+                <source media="(min-width: 480px)" srcset="images/Unsplash_play1-800.jpg 800w, images/Unsplash_1200.jpg 1200w" sizes="80vw">
+                <img src="images/Unsplash_play1-400.jpg" alt="Band on stage">
+              </picture>
+            </a>
+        </div>
+
+        <div class="article_content">
+            <h2 class="article_title"><a href="article4.html">ARTICLE 4</a></h2>
+            <p class="article_time"><time datetime="2020-10-29">29.10.2020</time></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque blanditiis ipsa nulla eveniet! Alias possimus, enim itaque vitae et quae deserunt id veritatis laboriosam, qui assumenda reiciendis recusandae fugiat fuga eius! Ipsam accusantium iste excepturi ut est suscipit, molestias quos? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor rerum tenetur deleniti ratione non, cum voluptate minus molestiae excepturi dolores.
+            </p>  
+        </div>
+
+        <div class="article_buttons">
+           <a href="article4.html" class="button_1 button_article">READ MORE</a> 
+           <a class="button_1 button_article">SHARE ME</a>  <!-- NOT BROKEN , just no implementation  -->
+        </div>
+      </article>
+       
+      <aside>
+        <h2>OPENING HOURS</h2>
+        <ul> 
+          <li><span class="day">Monday:</span> 5am to 3pm</li>
+          <li><span class="day">Tuesday:</span> 5am to 3pm</li>
+          <li><span class="day">Wednesday:</span> <strong>Closed</strong></li>
+          <li><span class="day">Thursday:</span> 5am to 3pm</li>
+          <li><span class="day">Friday:</span> 5am to 3pm</li>
+          <li><span class="day">Saturday:</span> <strong>Closed</strong></li>
+          <li><span class="day">Sunday:</span> <strong>Closed</strong> </li>
+        </ul>
+      </aside>
+
+      <div class="program">
+        <a target="_blank" href="images/Program.jpg">
+          <picture> 
+            <source media="(min-width: 480px)" srcset="images/Program.jpg 800w, images/Program.jpg 1200w" sizes="80vw">
+            <img src="images/Program.jpg" alt="Program for next month">
+          </picture>
+        </a>
+      </div>    
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer_pos">
+      <div class="footer_container">
+
+        <div class="footer_box"> 
+          <h2>About Us</h2> 
+          <p>Welcome to our little Moravian theatre where big things happen, we are playing every day in a week except wednesdays and weekends. We are also offering free spaces for your celebrations, meetings or work conferencies. Do not hesitate and Visis Us or Contact Us. 
+          </p>            
+        </div>
+        
+        <div class="footer_box"> 
+          <h2>Address</h2>
+          <div class="address">
+           <p> 
+              příspěvková organizace<br>
+              28. října 2<br>
+              701 85 Moravská Ostrava<br>
+              <a href="https://divadloarena.cz/subdom/arena2/vstupenky/prodej" target="_blank">Divadlo Arena</a>
+           </p>
+          </div>
+        </div>
+
+        <div class="footer_box">
+          <h2 id="contact">Contact Us</h2>
+          <form action="mailto:40490454@live.napier.ac.uk" method="GET" enctype="text/plain">
+            <label for="mail">EMAIL <span >*</span></label>
+            <input type="email" name="email" id="mail" required>
+            <label for="mess">MESSAGE <span >*</span></label>
+            <textarea name="mess" id="mess" placeholder="50 words or less" maxlength="50" rows="4" cols="50" required></textarea>
+            <button type="submit" name="contact_button" >Send</button>
+          </form>
+        </div> 
+
+      </div>
+    </div>
+
+    <div class="author">
+      <p><span class="Colored">Karel Z.</span> project aks &copy; 2020</p>
+    </div>
+  </footer>    
+</body>
+</html>

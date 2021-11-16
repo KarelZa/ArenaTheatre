@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/feedback_form.css" type="text/css">
+    <title>Feedback</title>
+    <script>
+      function getData()
+      {
+          //gettting the values
+          var firstName= document.getElementById("firstName").value; 
+          var surname= document.getElementById("surname").value; 
+          var email = document.getElementById("email").value;
+
+          //saving the values in local storage
+          localStorage.setItem("fn", firstName);
+          localStorage.setItem("sur", surname);
+          localStorage.setItem("em", email);  
+        }
+
+
+      </script>
+</head>
+<body>
+  <header>
+    <div class="logo_container">
+      <a href="index.html"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.58 37.54"><defs><style>.cls-1,.cls-4{font-size:12px;fill:#fff;font-family:Arial-Black, Arial;font-weight:800;}.cls-2{letter-spacing:-0.01em;}.cls-3{font-size:9px;font-family:ArialMT, Arial;font-weight:400;}.cls-3,.cls-4{letter-spacing:0.04em;}</style></defs><title>Logo</title><text class="cls-1" transform="translate(0 10.86)">ARÉ<tspan class="cls-2" x="27.33" y="0">N</tspan><tspan x="37.21" y="0">A</tspan><tspan class="cls-3"><tspan x="0" y="10">KOMORNÍ</tspan></tspan></text><text class="cls-4" transform="translate(0.38 33.72)">S</text><text class="cls-4" transform="translate(8.74 33.72)">C</text><text class="cls-1" transform="translate(18 33.86)">É<tspan class="cls-2" x="8.67" y="0">N</tspan><tspan x="18.54" y="0">A</tspan></text><text x="-556.02" y="-270.97"/></svg></a>
+    </div>
+
+    <input type="checkbox" id="nav_toggle" class="nav_toggle">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>  
+          <li><a href="pricing.html">Tickets</a></li>
+          <li><a href="feedback_form.html">Feedback</a></li>
+          <li><a onclick="scrollSmoothTo('contact')" class="pointer">Contact</a></li>
+        </ul>       
+      </nav>
+    <label for="nav_toggle" class="nav_toggle_label"><span>&#9776;</span></label>  
+  </header>
+
+  <main>
+    <form class="feedback_form"  id="name-form" action="form_submitted.html" method="POST">
+      <fieldset>   
+        <!-- Form Name -->
+        <legend>Feedback Form</legend>
+            
+        <!-- FirstName text input -->
+        <div class="form_group">
+          <label class="feedback_label" for="firstName">First name</label>  
+          <div class="feedback_input">
+            <input id="firstName" name="firstName" type="text" placeholder="required" class="form_control" maxlength="10" required>       
+          </div>
+        </div>
+            
+        <!-- Surname text input-->
+        <div class="form_group">
+          <label class="feedback_label" for="surname">Surname</label>  
+          <div class="feedback_input">
+            <input  id="surname" name="surname" type="text" placeholder="required" class="form_control" required>  
+          </div>
+        </div>
+
+        <!-- Email-->
+        <div class="form_group">
+          <label class="feedback_label" for="email">Email</label>  
+          <div class="feedback_input">
+            <input id="email" name="email" type="email" placeholder="required" class="form_control" required>  
+          </div>
+        </div>
+            
+        <!-- Gender (radios) -->
+        <div class="form_group">
+          <label class="feedback_label">Gender</label>
+          <div class="feedback_input"> 
+            <label class="radio_inline" for="male" >
+              Male <input type="radio" name="gender" id="male" value="male">      
+            </label> 
+            <label class="radio_inline" for="female">
+              Female <input type="radio" name="gender" id="female" value="female">      
+            </label>
+            <label class="radio_inline" for="other">
+              Other <input type="radio" name="gender" id="other" value="other">   
+            </label>
+          </div>
+        </div>
+
+        <!-- Multiple Checkboxes -->
+        <div class="form_group">
+          <label class="feedback_label">Theatre Genres</label>
+          <div class="feedback_input">
+            <div class="checkbox">
+              <label for="drama">
+                <input  type="checkbox" name=theatre_genres id="drama" value="drama">Drama
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="comedy">
+                <input type="checkbox" name="theatre_genres" id="comedy" value="comedy">Comedy
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="tragicomedy">
+                <input type="checkbox" name="theatre_genres" id="tragicomedy" value="tragicomedy">Tragicomedy
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="melodrama">
+                <input type="checkbox" name="theatre_genres" id="melodrama" value="melodrama">Melodrama
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="opera">
+                <input type="checkbox" name="theatre_genres" id="opera" value="opera">Opera
+              </label>
+            </div>
+          </div>
+        </div>
+            
+        <!-- AgeGroup (Selection) -->
+        <div class="form_group">
+          <label class="feedback_label" >Age Group</label>
+          <div class="feedback_input">
+            <select id="selectbasic" name="ageGroup" class="form_control" >
+              <option value="none">None</option>
+              <option value="under18">Under 18</option>
+              <option value="18to24">18 to 24</option>
+              <option value="25to35">25 to 35</option>
+              <option value="35to60">35 to 60</option>
+              <option value="above60">Above 60</option>
+            </select>
+          </div>
+        </div>
+
+        <!--Feedback Message -->
+        <div class="message">
+          <label id="message_label" for="textarea">Message</label>
+          <div class="feedback_input">                     
+            <textarea class="form_control" id="textarea" name="textarea" placeholder="Please write your feedback here" maxlength="300" rows="10"></textarea>
+          </div>
+        </div>
+            
+        <!-- Submit Button -->
+        <div class="submit">
+           <button id="feedback_button" type="submit" name="submitbutton" onclick="getData()">Submit</button>
+        </div>    
+      </fieldset>
+            
+    </form>          
+  </main>
+
+  <footer>
+    <div class="author">
+      <p><span class="Colored">Karel Z.</span> project aks &copy; 2020</p>
+    </div>
+  </footer>
+ 
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/feedback_form.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="feedback_box">
+            <h2>Thank you for your Request</h2>
+            <p><span class="form_data" id="firstName"></span> <span class="form_data" id="surname"></span></p><br>
+            <h2>We will contact you shortly on your email</h2>
+            <p><span class="form_data" id="email"></span> </p>    
+        </div>  
+        <div id="redirect">
+            <p>You are going to be redirected to the main page in <span id="seconds">5</span> sec</p>
+        </div>          
+    </main>
+
+       
+
+    <script>
+        //displaying the value from local storage to another page by their respective Ids
+        document.getElementById("firstName").innerHTML=localStorage.getItem("fn");
+        document.getElementById("surname").innerHTML=localStorage.getItem("sur");
+        document.getElementById("email").innerHTML=localStorage.getItem("em");
+
+        var seconds = 5; // seconds for HTML
+        var update; // variable for clearInterval() function
+
+        function redirect() {
+            document.location.href = 'index.html';
+        }
+
+        function updateSecs() {
+            document.getElementById("seconds").innerHTML = seconds;
+            seconds--;
+            if (seconds == -1) {
+                clearInterval(update);
+                redirect();
+            }
+        }
+
+        function countdownTimer() {
+            update = setInterval(function () {
+                updateSecs()
+            }, 1000);
+        }
+
+        countdownTimer();
+    </script>
+</body>
+</html>
